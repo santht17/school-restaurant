@@ -6,6 +6,13 @@ import {CustomersModule} from './customers/customers.module';
 import { CurrentOptionComponent } from './current-option/current-option.component';
 import {OrdersModule} from './orders/orders.module';
 
+import {BrowserAnimationsModule} from'@angular/platform-browser/animations';
+import {MdAutocompleteModule, MdButtonModule, MdButtonToggleModule, MdCardModule, MdCheckboxModule, MdChipsModule,
+        MdCoreModule, MdDatepickerModule, MdDialogModule, MdExpansionModule, MdGridListModule, MdIconModule,
+        MdInputModule, MdListModule, MdMenuModule, MdNativeDateModule, MdPaginatorModule, MdProgressBarModule,
+        MdProgressSpinnerModule, MdRadioModule, MdRippleModule, MdSelectModule, MdSidenavModule, MdSliderModule, 
+        MdSlideToggleModule, MdSnackBarModule, MdSortModule, MdTableModule, MdTabsModule, MdToolbarModule, 
+        MdTooltipModule,} from'@angular/material';
 
 import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './customers/index/index.component';
@@ -24,6 +31,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     CustomersModule,
     OrdersModule,
     RouterModule.forRoot(
